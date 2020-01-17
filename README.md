@@ -44,3 +44,26 @@ Squeezing trigger
 ```
 
 **Using model checkpoints when playing russian roulette is frowned upon** :unamused:
+
+### Crackmoid
+Being discontineous and undefined in zero is perhaps not what normal people look for in an activation function. But maybe you are not normal. Maybe you like seeing your models explode. :boom:
+
+**f(x) = sigmoid(x)/x**
+
+
+Crackmoid is losely based on the swish activation function from the paper [Searching for Activation Functions](https://arxiv.org/abs/1710.05941).
+
+#### Examples
+```python
+model.add(Dense(10, activation='crackmoid'))
+```
+
+```python
+model.add(Activation('crackmoid'))
+```
+
+```python
+from masochism.layers import Crackmoid
+
+model.add(Crackmoid())
+```
