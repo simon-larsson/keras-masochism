@@ -43,4 +43,4 @@ Spinning cylinder
 Squeezing trigger
 ```
 
-**Using models checkpoints when playing russian roulette is frowned upon** :unamused:
+**Using model checkpoints when playing russian roulette is frowned upon** :unamused:
