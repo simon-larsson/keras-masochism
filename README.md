@@ -50,6 +50,7 @@ Being discontineous and undefined in zero is perhaps not what normal people look
 
 **f(x) = sigmoid(x)/x**
 
+PICTURE HERE!
 
 Crackmoid is losely based on the swish activation function from the paper [Searching for Activation Functions](https://arxiv.org/abs/1710.05941).
 
