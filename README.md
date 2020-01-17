@@ -1,10 +1,10 @@
 # Keras Masochism ༼ノಠل͟ಠ༽ノ ︵ ┻━┻
-Masochistic deep learning with Keras.
+An extensions for Keras that make working with deep learning more painful then it needs to be. Made for those that
 
-### Russian Roulette
+### Russian Roulette :gun: :game_die: 
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
 
-Play a game of russian roulette in the end of your training. If you lose your network dies. If you win you will cherish every prediction you make.
+Play a game of russian roulette in the end of your training. If you lose your network dies and your weights are destroyed. But if you win you will remember cherish every prediction it makes!
 
 #### Arguments
 
@@ -12,16 +12,17 @@ Play a game of russian roulette in the end of your training. If you lose your ne
 - **chambers** - number of bullet chambers, int.
 - **firings** - number of times the trigger will be pulled, int.
 
+#### Example
 ```python
 from masochism.callbacks import RussianRoulette
 
-rr = RussianRoulette(1, 6, 1)
+rr = RussianRoulette()
 
 model.fit(X, y, epochs=5, verbose=1, callbacks=[rr])
 ```
 
 Output without spoiling the end
-```python
+```
 Epoch 5/5
 1000/1000 [==============================] - 0s 31us/step - loss: 0.6929
  ______________________________
@@ -41,3 +42,5 @@ Spinning cylinder
 
 Squeezing trigger
 ```
+
+**Using models checkpoints when playing russian roulette is frowned upon** :unamused:
