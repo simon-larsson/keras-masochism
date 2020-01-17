@@ -21,7 +21,11 @@ class RussianRoulette(Callback):
         if rounds < 1:
             raise ValueError('No cheating... you have to put at least'
                              ' one round in the revolver.')
-            
+        
+        if firings < 1:
+            raise ValueError('No cheating... you have to fire at least'
+                             ' once.')       
+
         if chambers - rounds < firings:
             raise ValueError('Someone has a deathwish... give yourself'
                              ' a chance to live.')
