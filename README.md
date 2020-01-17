@@ -1,5 +1,5 @@
-# Keras Masochism ༼ノಠل͟ಠ༽ノ ︵ ┻━┻
-An extensions for Keras that make working with deep learning more painful then it needs to be. Made for those that
+# :imp: Keras Masochism ༼ノಠل͟ಠ༽ノ ︵ ┻━┻
+Keras for twisted minds. An extension of Keras that makes working with deep learning more painful then it needs to be. Perfect for those that enjoy a good self sabotage.
 
 ### Russian Roulette :gun: :game_die: 
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
