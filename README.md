@@ -4,7 +4,7 @@ An extensions for Keras that make working with deep learning more painful then i
 ### Russian Roulette :gun: :game_die: 
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
 
-Play a game of russian roulette in the end of your training. If you lose your network dies and your weights are destroyed. But if you win you will remember cherish every prediction it makes!
+Play a game of russian roulette in the end of your training. If you lose your network dies and your weights are destroyed. But if you win you will remember to cherish every prediction it makes!
 
 #### Arguments
 
