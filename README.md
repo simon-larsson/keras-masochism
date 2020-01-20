@@ -66,10 +66,14 @@ Crackmoid is losely based on the swish activation function from the paper [Searc
 
 #### Examples
 ```python
+import masochism
+
 model.add(Dense(10, activation='crackmoid'))
 ```
 
 ```python
+import masochism
+
 model.add(Activation('crackmoid'))
 ```
 
@@ -77,4 +81,32 @@ model.add(Activation('crackmoid'))
 from masochism.layers import Crackmoid
 
 model.add(Crackmoid())
+```
+
+### SGDIM - Stochastic Gradual Descent Into Madness
+SGDIM is a sub-optimizer based on gradient descent. It works in much the same way except it will sometimes take random missteps in the wrong direction based on a madness factor.  
+
+#### Arguments
+
+- **learning_rate** - learning rate, float.
+- **momentum** - accelerates SGD in the relevant direction and dampens oscillations, float.
+- **nestrov** - flag for applying nestrov momentum, bool.
+- **madness** - Likelihood of taking a misstep, float.
+
+
+#### Examples
+```python
+from masochism.optimizers import SGDIM
+
+model.compile(optimizer=SGDIM(madness=0.2),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+```
+
+```python
+import masochism
+
+model.compile(optimizer='sgdim',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
 ```
