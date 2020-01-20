@@ -1,5 +1,6 @@
 from keras.legacy import interfaces
 from keras.optimizers import Optimizer
+from keras.utils import get_custom_objects
 import keras.backend as K
 
 class SGDIM(Optimizer):
@@ -89,3 +90,5 @@ class SGDIM(Optimizer):
                   'madness': float(K.get_value(self.madness))}
         base_config = super(SGDIM, self).get_config()
         return dict(list(base_config.items()) + list(config.items()))
+
+get_custom_objects().update({'sgdim': SGDIM()})
