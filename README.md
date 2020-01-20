@@ -11,9 +11,9 @@ pip install -e
 
 ## Components
 
-- **[Russian Roulette](russian-roulette)** - russian roulette callback that might kill your model.
-- **[Crackmoid](crackmoid)** - the opposite of a good activation function.
-- **[SGDIM](sgdim)** - a stochastic gradual descent into madness sub-optimizer that missteps.
+- **[Russian Roulette](#russian-roulette)** - russian roulette callback that might kill your model.
+- **[Crackmoid](#crackmoid)** - the opposite of a good activation function.
+- **[SGDIM](#sgdim)** - a stochastic gradual descent into madness sub-optimizer that missteps.
 - **GroupAbnormalization** - (Not impl.) denormalize activations of previous layers independent of batch size.
 - **DepressNet** - (Not impl.) ResNet with depressingly long residual connections, Deep Pre-Activation Residual Networks.
 - **DeficientNet** - (Not impl.) a malnourished version of EfficientNet.
