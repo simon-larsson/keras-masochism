@@ -93,7 +93,7 @@ model.add(Crackmoid())
 ```
 
 ### SGDIM - Stochastic Gradual Descent Into Madness
-SGDIM is a sub-optimizer based on gradient descent. It works in much the same way except it will sometimes take random missteps in the wrong direction based on a madness factor.  
+SGDIM is the latest addition to the new exciting genre of sub-optimizer. It introduces the concept of madness where the optimizer can randomly decide to take a step in the wrong direction, making training more exciting. 
 
 #### Arguments
 
