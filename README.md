@@ -1,6 +1,14 @@
 # :imp: Keras Masochism ༼ノಠل͟ಠ༽ノ ︵ ┻━┻
 Keras for twisted minds. An extension of Keras that makes working with deep learning more painful then it needs to be. Perfect for those that enjoy self sabotage.
 
+## Installation
+
+```python
+git clone https://github.com/simon-larsson/keras-masochism.git
+cd keras-masochism
+pip install -e 
+```
+
 ### Russian Roulette :gun: :game_die: 
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
 
