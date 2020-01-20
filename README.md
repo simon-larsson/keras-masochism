@@ -6,10 +6,22 @@ Keras for twisted minds. An extension of Keras that makes working with deep lear
 ```python
 git clone https://github.com/simon-larsson/keras-masochism.git
 cd keras-masochism
-pip install -e 
+pip install -e
 ```
 
-### Russian Roulette :gun: :game_die: 
+## Components
+
+- **[Russian Roulette](#russian-roulette)** - russian roulette callback that might kill your model.
+- **[Crackmoid](#crackmoid)** - the opposite of a good activation function.
+- **[SGDIM](#sgdim)** - a stochastic gradual descent into madness sub-optimizer that missteps.
+- **GroupAbnormalization** - (not impl.) denormalize activations of previous layers independent of batch size.
+- **DepressNet** - (not impl.) ResNet with depressingly long residual connections, Deep Pre-Activation Residual Networks.
+- **DeficientNet** - (not impl.) a malnourished version of EfficientNet.
+
+### Russian Roulette
+
+:gun: :game_die:
+
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
 
 Play a game of russian roulette in the end of your training. If you lose your network dies and your weights are destroyed. But if you win you will remember to cherish every prediction it makes!
@@ -66,10 +78,14 @@ Crackmoid is losely based on the swish activation function from the paper [Searc
 
 #### Examples
 ```python
+import masochism
+
 model.add(Dense(10, activation='crackmoid'))
 ```
 
 ```python
+import masochism
+
 model.add(Activation('crackmoid'))
 ```
 
@@ -77,4 +93,35 @@ model.add(Activation('crackmoid'))
 from masochism.layers import Crackmoid
 
 model.add(Crackmoid())
+```
+
+### SGDIM
+
+Stochastic Gradual Descent Into Madness
+
+SGDIM is the latest addition to the new exciting genre of sub-optimizer. It introduces the concept of madness where the optimizer can randomly decide to take a step in the wrong direction, making training more exciting. 
+
+#### Arguments
+
+- **learning_rate** - learning rate, float.
+- **momentum** - accelerates SGD in the relevant direction and dampens oscillations, float.
+- **nestrov** - flag for applying nestrov momentum, bool.
+- **madness** - Likelihood of taking a misstep, float.
+
+
+#### Examples
+```python
+from masochism.optimizers import SGDIM
+
+model.compile(optimizer=SGDIM(madness=0.2),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+```
+
+```python
+import masochism
+
+model.compile(optimizer='sgdim',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
 ```
