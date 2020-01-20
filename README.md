@@ -11,14 +11,17 @@ pip install -e
 
 ## Components
 
-- **Russian Roulette** - russian roulette callback that might kill your model.
-- **Crackmoid** - the opposite of a good activation function.
-- **SGDIM** - a gradual descent into madness sub-optimizer that missteps.
+- **[Russian Roulette](russian-roulette)** - russian roulette callback that might kill your model.
+- **[Crackmoid](crackmoid)** - the opposite of a good activation function.
+- **[SGDIM](sgdim)** - a stochastic gradual descent into madness sub-optimizer that missteps.
 - **GroupAbnormalization** - (Not impl.) denormalize activations of previous layers independent of batch size.
 - **DepressNet** - (Not impl.) ResNet with depressingly long residual connections, Deep Pre-Activation Residual Networks.
 - **DeficientNet** - (Not impl.) a malnourished version of EfficientNet.
 
-### Russian Roulette :gun: :game_die: 
+### Russian Roulette
+
+:gun: :game_die:
+
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
 
 Play a game of russian roulette in the end of your training. If you lose your network dies and your weights are destroyed. But if you win you will remember to cherish every prediction it makes!
@@ -92,7 +95,10 @@ from masochism.layers import Crackmoid
 model.add(Crackmoid())
 ```
 
-### SGDIM - Stochastic Gradual Descent Into Madness
+### SGDIM
+
+Stochastic Gradual Descent Into Madness
+
 SGDIM is the latest addition to the new exciting genre of sub-optimizer. It introduces the concept of madness where the optimizer can randomly decide to take a step in the wrong direction, making training more exciting. 
 
 #### Arguments
