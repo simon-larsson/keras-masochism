@@ -6,8 +6,17 @@ Keras for twisted minds. An extension of Keras that makes working with deep lear
 ```python
 git clone https://github.com/simon-larsson/keras-masochism.git
 cd keras-masochism
-pip install -e 
+pip install -e
 ```
+
+## Components
+
+- **Russian Roulette** - russian roulette callback that might kill your model.
+- **Crackmoid** - the opposite of a good activation function.
+- **SGDIM** - a gradual descent into madness sub-optimizer that missteps.
+- **GroupAbnormalization** - (Not impl.) denormalize activations of previous layers independent of batch size.
+- **DepressNet** - (Not impl.) ResNet with depressingly long residual connections, Deep Pre-Activation Residual Networks.
+- **DeficientNet** - (Not impl.) a malnourished version of EfficientNet.
 
 ### Russian Roulette :gun: :game_die: 
 Do you want to add an element of danger to your training? Are you willing gamble when your models life is on the line? Then this russian roulette callback is just what you are looking for!
